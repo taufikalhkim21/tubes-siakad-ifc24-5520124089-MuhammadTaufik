@@ -10,6 +10,9 @@
 </head>
 <body>
     <div class="navbar-top">
+        <div class="list-sidebar" id="sidebarToggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
         <div class="profile">
             <ul>
                 <li class="profile-text">
@@ -21,7 +24,7 @@
         </div>
     </div>
 
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
         <div class="logo">
             <img src="{{ asset('img/logo.png') }}" alt="logo">
         </div>
@@ -30,7 +33,7 @@
             <ul>
                 @if (auth()->user()->role === 'admin')
                     <li><a href="{{ route('mahasiswa.index') }}" class="{{ request()->routeIs('mahasiswa.*') ? 'active' : '' }}"><i class="fa-solid fa-graduation-cap"></i>Mahasiswa</a></li>
-                    <li><a href="{{ route('dosen.index') }}" class="{{ request()->routeIs('dosen.*') ? 'active' : '' }}"><i class="fa-solid fa-graduation-cap"></i>Dosen</a></li>
+                    <li><a href="{{ route('dosen.index') }}" class="{{ request()->routeIs('dosen.*') ? 'active' : '' }}"><i class="fa-solid fa-user-graduate"></i>Dosen</a></li>
                     <li><a href="{{ route('matakuliah.index') }}" class="{{ request()->routeIs('matakuliah.*') ? 'active' : '' }}"><i class="fa-solid fa-book"></i>Matakuliah</a></li>
                 @endif
                 <li><a href="{{ route('jadwal.index') }}" class="{{ request()->routeIs('jadwal.*') ? 'active' : '' }}"><i class="fa-solid fa-calendar"></i>Jadwal</a></li>
@@ -54,5 +57,6 @@
     </form>
 
     @yield('content')
+    <script src="{{ asset('js/index.js') }}"></script>
 </body>
 </html>
