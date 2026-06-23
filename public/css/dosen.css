@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #e8e8f0;
+}
+
+.container {
+    margin-left: 250px;
+    padding: 30px;
+}
+
+.container h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+}
+
+.dosen-table {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.dosen-table > a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #5b4fcf;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    transition: background 0.18s, transform 0.12s;
+}
+
+.dosen-table > a:hover {
+    background: #4a3fb8;
+    transform: translateY(-1px);
+}
+
+.table {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid #ebebf5;
+    background: #fff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+}
+
+thead {
+    background: #f7f7fc;
+}
+
+thead th {
+    padding: 14px 20px;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    border-bottom: 1px solid #ebebf5;
+    white-space: nowrap;
+}
+
+tbody tr {
+    border-bottom: 1px solid #f2f2f8;
+    transition: background 0.12s;
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    background: #fafaff;
+}
+
+tbody td {
+    padding: 14px 20px;
+    color: #2d2d3a;
+    vertical-align: middle;
+}
+
+tbody td a,
+tbody td button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    margin-right: 4px;
+    transition: background 0.15s, transform 0.12s;
+    cursor: pointer;
+}
+
+tbody td a:hover,
+tbody td button:hover {
+    transform: scale(1.1);
+}
+
+tbody td a:has(.fa-pen-to-square) {
+    color: #5b4fcf;
+    background: #ededfa;
+}
+
+tbody td a:has(.fa-pen-to-square):hover {
+    background: #ddddf7;
+}
+
+tbody td a:has(.fa-trash),
+tbody td button:has(.fa-trash) {
+    color: #e05252;
+    background: #fdeaea;
+}
+
+tbody td a:has(.fa-trash):hover,
+tbody td button:has(.fa-trash):hover {
+    background: #f9d4d4;
+}
+
+tbody td form {
+    display: inline;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-left: 0;
+        padding: 20px 16px;
+    }
+}
