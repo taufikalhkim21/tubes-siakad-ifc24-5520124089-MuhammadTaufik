@@ -6,7 +6,7 @@ use App\Models\Krs;
 use App\Models\Mahasiswa;
 use App\Models\Matakuliah;
 use Illuminate\Http\Request;
-
+use Barryvdh\DomPDF\Facade\Pdf;
 class KrsController extends Controller
 {
     /**
@@ -85,4 +85,16 @@ class KrsController extends Controller
         $dataKrs->delete();
         return redirect()->route('krs.index')->with('success', 'data berhasil di hapus');
     }
+
+    public function exportPdf()
+    {
+    $dataKrs = Krs::with(['mahasiswa', 'matakuliah'])->get();
+
+    $pdf = Pdf::loadView('krs.pdf', compact('dataKrs'))
+        ->setPaper('a4', 'landscape');
+
+    return $pdf->download('data-krs.pdf');
+    }
 }
+
+

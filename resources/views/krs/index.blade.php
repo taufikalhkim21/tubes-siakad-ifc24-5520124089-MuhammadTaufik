@@ -8,7 +8,10 @@
     <div class="container">
         <h1>KRS</h1>
         <div class="dosen-table">
-            <a href="{{ route('krs.create') }}"><i class="fa-solid fa-plus"></i> Tambah KRS</a>
+            <div class="action-buttons">
+                <a href="{{ route('krs.create') }}"><i class="fa-solid fa-plus"></i> Tambah KRS</a>
+                <a href="{{ route('krs.export') }}"><i class="fa-solid fa-file-arrow-up"></i> Export PDF</a>
+            </div>
             <div class="table">
                 <table>
                     <thead>

@@ -26,7 +26,8 @@ Route::middleware(['auth'])->group(function () {
         Route::resource('matakuliah', MatakuliahController::class);
         Route::resource('jadwal', JadwalController::class)->except(['index', 'show']);
     });
-
+    
+    Route::get('krs/export', [KrsController::class, 'exportPdf'])->name('krs.export');
     Route::resource('krs', KrsController::class);
     Route::resource('jadwal', JadwalController::class)->only(['index', 'show']);
 });

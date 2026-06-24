@@ -23,7 +23,13 @@ body {
     align-items: flex-end;
 }
 
-.dosen-table > a {
+.action-buttons {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.action-buttons a {
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -34,11 +40,10 @@ body {
     border-radius: 10px;
     font-size: 0.875rem;
     font-weight: 600;
-    margin-bottom: 16px;
     transition: background 0.18s, transform 0.12s;
 }
 
-.dosen-table > a:hover {
+.action-buttons a:hover {
     background: #4a3fb8;
     transform: translateY(-1px);
 }
