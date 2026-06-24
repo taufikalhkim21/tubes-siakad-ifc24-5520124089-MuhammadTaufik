@@ -43,7 +43,7 @@
                 <p>OTHER</p>
                 <ul>
                     <li>
-                        <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        <a href="#" id="logoutLink">
                             <i class="fa-solid fa-arrow-right-from-bracket"></i>Logout
                         </a>
                     </li>
