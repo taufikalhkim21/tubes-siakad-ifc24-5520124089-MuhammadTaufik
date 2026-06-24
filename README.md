@@ -5,12 +5,12 @@
 **Akun Login:**
 
 ROLE : admin
-admin22@gmail.com
-admin22
+username : admin22@gmail.com
+password : admin22
 
 ROLE : mahasiswa
-5520124089
-mahasiswa
+username : 5520124089
+password : mahasiswa
 
 ---
 
