@@ -16,7 +16,7 @@ password : mahasiswa
 
 ## Deskripsi Aplikasi
 
-SIAKAD ini dibuat buat nge-manage data akademik kayak dosen, mahasiswa, mata kuliah, jadwal, sama KRS dalam satu aplikasi. Ada dua role pengguna, Admin yang bisa ngatur semua data, sama Mahasiswa yang bisa ngambil KRS dan lihat jadwal kuliah.
+SIAKAD ini dibuat nge-manage data akademik kayak dosen, mahasiswa, mata kuliah, jadwal, sama KRS dalam satu aplikasi. Ada dua role pengguna, Admin yang bisa ngatur semua data, sama Mahasiswa yang bisa ngambil KRS dan lihat jadwal kuliah.
 
 ---
 
